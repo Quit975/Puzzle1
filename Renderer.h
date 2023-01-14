@@ -6,18 +6,11 @@
 class Renderer
 {
 public:
-	Renderer() {};
-	~Renderer() {};
+	Renderer();
+	~Renderer();
 
-	void RenderFrame(int frameNr)
-	{
-		if (((frameNr * secretNr) % 3) == 0)
-		{
-			// Play a sound with id = frameNr * secretNr by calling the PlaySoundById from the AudioPlayer
-		}
-	}
-
+	void RenderFrame(int frameNr);
+	
 private:
 	int secretNr = 42;
-
 };

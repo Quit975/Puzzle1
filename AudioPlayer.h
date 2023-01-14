@@ -1,15 +1,10 @@
 #pragma once
 
-#include <iostream>
-
 class AudioPlayer
 {
 public:
-	AudioPlayer() {};
-	~AudioPlayer() {};
+	AudioPlayer();
+	~AudioPlayer();
 
-	void PlaySoundById(int id)
-	{
-		std::cout << "Playing sound id " << id << "\n";
-	};
+	void PlaySoundById(int id);	
 };
